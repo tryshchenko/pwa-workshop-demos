@@ -1,7 +1,9 @@
 const CACHE = "strategy-example";
-const AWAIT_TIME = 1000;
+const AWAIT_TIME = 5000;
 
-const precache = () => caches.open(CACHE).then(cache => cache.addAll(["/"]));
+const precache = () =>
+  caches.open(CACHE).then(cache =>
+    cache.addAll(["/"]));
 
 const fromNetwork = (req, timeout) =>
   new Promise((fulfill, reject) => {
@@ -33,6 +35,7 @@ self.addEventListener("install", event => {
 
 self.addEventListener("fetch", event =>
   event.respondWith(
-    fromNetwork(event.request, AWAIT_TIME).catch(() => fromCache(event.request))
+    fromNetwork(event.request, AWAIT_TIME).catch(() =>
+      fromCache(event.request))
   )
 );
