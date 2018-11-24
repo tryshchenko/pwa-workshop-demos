@@ -8,8 +8,6 @@ if (navigator && navigator.serviceWorker) {
     });
 
     navigator.serviceWorker.addEventListener('message', (event) => {
-        console.log('execution');
         textarea.value = `${textarea.value} \n ${event.data.payload}`;
-        // console.log(event.data);
     });
 }
