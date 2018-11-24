@@ -7,7 +7,5 @@
 // console.log('Scope equality', self.caches === caches);
 // console.log('caches', caches);
 // console.log('fetch', fetch);
-self.addEventListener('install', event => console.log('Install event', event));
-self.addEventListener('fetch', event => console.log('Fetch event', event));
-
-
+self.addEventListener("install", event => console.log("Install event", event));
+self.addEventListener("fetch", event => console.log("Fetch event", event));
