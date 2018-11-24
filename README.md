@@ -11,3 +11,11 @@ The following list is named in relation to topics which are covered during the e
 06. Databases. IndexedDB as a storage
 07. How to access indexed DB from a server worker.
 08. How to exchange data between service worker and application
+09. React application default service worker
+10. Custom service worker with CRA setup
+11. Workbox example
+12. - (v2)
+13. - (v2)
+14. - (v2)
+15. Node.js server example
+16. - (v2)
